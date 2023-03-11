@@ -1,0 +1,41 @@
+tup = (1)  # tup is treated as int
+print(type(tup), tup)
+
+tup = (1,)  # tup is treated as tuple
+print(type(tup), tup)
+
+tup = (1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
+
+# Tuple indexing
+print(tup[0])
+print(tup[-1])
+print(tup[-2])
+print(tup[5])
+
+if 4 in tup:
+    print("Yes...")
+
+# Tuple slicing
+print(tup[:])
+print(tup[-1:])
+print(tup[:2])
+print(tup[:-3])
+
+# Tuple methods
+lst = list(tup)
+lst.append(100)
+tup = tuple(lst)
+print(tup)
+
+print(lst.index(5))
+print(lst.index(2, 0, 6))
+
+# Concatenation of tuples
+asia = ('India', 'Russia', 'Srilanka', 'Bhutan')
+europe = ("USA", 'Canada', 'Brazil', 'UK')
+world = asia + europe
+print(asia)
+print(europe)
+print(world)
+
+print(lst.count(0))

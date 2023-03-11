@@ -1,0 +1,48 @@
+s = "Shiroor, Byndoor, Kundapura, Udupi, Karnataka, India"
+print(len(s))
+print(s[0:9])
+print(s[:])
+print(s[0:-3])
+print(s[-4:-3])
+
+print(s.lower())
+print(s.upper())
+print(s.rstrip('ia'))
+print(s.replace('a', '@'))
+
+l = []
+l = s.split(',')
+print(l)
+
+t = "hello  everyone..."
+print(t.capitalize())
+print(len(t))
+print(t.center(25))
+print(len(t.center(25)))
+
+print(s.count('a'))
+print(s.endswith('a'))
+print(s.endswith('a', 1, 10))
+
+print(s.find('a'))
+print(s.find('z'))
+print(s.find('Udupi'))
+
+print(s.index('a'))
+
+print(s.isalnum())
+print(s.isalpha())
+
+print(s.islower())
+print(t.islower())
+
+a = "abcdefghijk\n"
+print(a)
+print(a.isprintable())
+
+u = " "
+print(u.isspace())
+
+u = "World Health Organization"
+print(t.istitle())
+print(u.istitle())
